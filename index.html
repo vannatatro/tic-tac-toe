@@ -24,7 +24,7 @@
             <div class="cell4">X</div>
             <div class="cell5">O</div>
             <div class="cell6">X</div>
-            <div class="cell7">0</div>
+            <div class="cell7">O</div>
             <div class="cell8">X</div>
             <div class="cell9">O</div>
         </div>
@@ -35,22 +35,37 @@
             </div> -->
             <div class="players">
                 <div class="play1">
-                    <p>Player 1 : </p>
-                    <p class="play1name">Sarah</p>                
+                    <p>X Marker: </p>
+                    <p class="play1name" id="play1name"></p>                
                 </div>
                 <div class="play2">
-                    <p>Player 2 :</p>  
-                    <p class="play2name">Patrick</p>              
+                    <p>O Marker:</p>  
+                    <p class="play2name" id="play2name"></p>              
                 </div>              
             </div>
-            <div class="status">It is Sarah's turn</div>
+            <div class="status">Status</div>
             <div class="buttons">
-                <button class="new_game">New game</button>
-                <button class="reset">Reset</button>
+                <button class="playerNames" id="playerNames">Change player names</button>
+                <button class="new_game">New Game</button>
             </div>
         </div>
     </div>
-    
+    <dialog>
+        <form id="form">
+            <!-- Player 1 name -->
+            <div>
+            <label for="p1">X Marker:</label>
+            <input type="text" id="p1" maxlength="15"/>
+            </div>
+            <!-- Player 2 name -->
+            <div>
+            <label for="p2">O Marker:</label>
+            <input type="text" id="p2" maxlength="15"/>
+            </div>
+            <!-- Submit button -->
+            <button id="submitBtn">Submit</button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

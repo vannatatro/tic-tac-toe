@@ -1,7 +1,7 @@
 
 
 .header {
-    height: 115px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@ h1 {
     font-style: normal;
     font-size: 72px;
     color: rgb(100, 100, 100);
+    letter-spacing: 5px;
 }
 
 /* div {
@@ -22,8 +23,8 @@ h1 {
 .lower {
     display: flex;
     margin: 50px;
-    margin-top: 10px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
 .game,
@@ -33,20 +34,24 @@ h1 {
     padding: 15px;
 }
 .info {
-    border-style: solid;
+    border: dashed 1px;
+    border-radius: 10px;
     padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 50px;
 }
 
 .play1,
 .play2 {
     font-family: "Rubik Doodle Shadow", system-ui;
+    letter-spacing: 3px;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
     display: flex;
     gap: 20px;
     align-items: center;
-    word-spacing: 5px;
+    word-spacing: 3px;
     height: 60px;
 }
 
@@ -78,16 +83,16 @@ h1 {
 .cell2,
 .cell4,
 .cell5 {
-    border-bottom: solid;
-    border-right: solid;
+    border-bottom: dashed;
+    border-right: dashed;
 }
 .cell3,
 .cell6 {
-    border-bottom: solid;
+    border-bottom: dashed;
 }
 .cell7,
 .cell8 {
-    border-right: solid;
+    border-right: dashed;
 }
 
 .game div {
@@ -96,7 +101,7 @@ h1 {
     align-items: center;
     font-family: sans-serif;
     font-weight: 200;
-    color: rgb(100, 100, 100);
+    color: rgb(95, 95, 95);
 
 }
 
@@ -120,12 +125,25 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.new_game,
-.reset {
+.playerNames,
+.new_game {
     flex: 1;
     padding: 5px;
 }
 
 .status {
     font-family: "Short Stack", cursive;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 60px 60px 40px;
+    width: 250px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+input {
+    width: 175px;
+    padding-left: 5px;
 }
