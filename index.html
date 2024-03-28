@@ -17,22 +17,18 @@
         <h1>Tic Tac Toe</h1>
     </div>
     <div class="lower">
-        <div class="game">
-            <div class="cell1">X</div>
-            <div class="cell2">O</div>
-            <div class="cell3">X</div>
-            <div class="cell4">X</div>
-            <div class="cell5">O</div>
-            <div class="cell6">X</div>
-            <div class="cell7">O</div>
-            <div class="cell8">X</div>
-            <div class="cell9">O</div>
+        <div class="game" id="game">
+            <div id="cell1" class="cell"></div>
+            <div id="cell2" class="cell"></div>
+            <div id="cell3" class="cell"></div>
+            <div id="cell4" class="cell"></div>
+            <div id="cell5" class="cell"></div>
+            <div id="cell6" class="cell"></div>
+            <div id="cell7" class="cell"></div>
+            <div id="cell8" class="cell"></div>
+            <div id="cell9" class="cell"></div>
         </div>
         <div class="info">
-            <!-- <div class="buttons">
-                <button class="new_game">New game</button>
-                <button class="reset">Reset</button>
-            </div> -->
             <div class="players">
                 <div class="play1">
                     <p>X Marker: </p>
@@ -43,10 +39,10 @@
                     <p class="play2name" id="play2name"></p>              
                 </div>              
             </div>
-            <div class="status">Status</div>
+            <div class="status" id="status"></div>
             <div class="buttons">
                 <button class="playerNames" id="playerNames">Change player names</button>
-                <button class="new_game">New Game</button>
+                <button class="new_game" id="new_game">New Game</button>
             </div>
         </div>
     </div>

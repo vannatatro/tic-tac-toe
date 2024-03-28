@@ -72,6 +72,13 @@ h1 {
     color: rgb(57, 116, 245);
 }
 
+#play1 {
+    color: rgb(255, 36, 40);
+}
+#play2 {
+    color: rgb(57, 116, 245);
+}
+
 .game{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -79,19 +86,19 @@ h1 {
     font-size: 100px;
 }
 
-.cell1,
-.cell2,
-.cell4,
-.cell5 {
+#cell1,
+#cell2,
+#cell4,
+#cell5 {
     border-bottom: dashed;
     border-right: dashed;
 }
-.cell3,
-.cell6 {
+#cell3,
+#cell6 {
     border-bottom: dashed;
 }
-.cell7,
-.cell8 {
+#cell7,
+#cell8 {
     border-right: dashed;
 }
 
