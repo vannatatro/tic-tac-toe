@@ -52,6 +52,7 @@ function startGame() {
         cell.addEventListener('click', handleClick, { once: true })
     })
     setBoardHoverClass()
+    statusMsg.innerText = `It's ${player_1}'s turn`
     winningMessageElement.classList.remove('show')
 }
 
