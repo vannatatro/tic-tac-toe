@@ -50,11 +50,24 @@ h1 {
 }
 .end-game {
     display: none;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
+    font-size: 75px;
+    line-height: 100px;
 }
 
 .end-game.show {
     display: flex;
+}
+
+.end-game-lil-div {
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -104,9 +117,9 @@ button:hover {
 }
 
 .restartBtn {
-    font-size: 20px;
-    height: 40px;
-    width: 125px;
+    font-size: 30px;
+    height: 50px;
+    width: 175px;
 }
 
 
@@ -152,7 +165,7 @@ button:hover {
     font-family: monospace;;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 30px;
     margin-left: -10px;
     background-color: transparent;
 }
@@ -178,7 +191,7 @@ button:hover {
 
 .status {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* Game Section */

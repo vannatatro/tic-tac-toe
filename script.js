@@ -17,13 +17,29 @@ const winningMessageElement = document.getElementById('end-game')
 const winningMessageText = document.querySelector('[data-end-game]')
 let oTurn
 
+let player_1 = ''
+let player_2 = ''
+const player_1_name_element = document.getElementById('play1name')
+const player_2_name_element = document.getElementById('play2name')
+const statusMsg = document.getElementById('statusMsg')
 const startGameElement= document.getElementById('start-game')
 const startBtn = document.getElementById('startBtn')
 startBtn.addEventListener('click', (e) => {
     e.preventDefault();
     startGameElement.classList.add('hide')
-
+    player_1 = form.p1.value
+    player_2 = form.p2.value
+    player_1_name_element.innerText = player_1
+    player_2_name_element.innerText = player_2
+    statusMsg.innerText = `It's ${player_1}'s turn`
 })
+function changeStatus() {
+    if (oTurn) {
+        statusMsg.innerText = `It's ${player_2}'s turn`
+        } else {
+            statusMsg.innerText = `It's ${player_1}'s turn` 
+}}
+
 
 startGame()
 
@@ -51,6 +67,7 @@ function handleClick(e) {
         setBoardHoverClass()
     }
     switchTurns()
+    changeStatus()
     setBoardHoverClass()
 }
 
@@ -60,7 +77,7 @@ function endGame(draw) {
     if (draw) {
         winningMessageText.innerText = 'Draw!'
     } else {
-        winningMessageText.innerText = `${oTurn ? "o" : "x"} wins!`
+        winningMessageText.innerText = `${oTurn ? player_2 : player_1} wins!`
     }
     winningMessageElement.classList.add('show')
 }
