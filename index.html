@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="lower">
+        <!-- start screen -->
+        <!-- <div class="start-game" id="start-game">
+            <div data-start-game></div>
+            <form id="form">
+                <div>
+                <label for="p1">Player 1 name (X Marker):</label>
+                <input type="text" id="p1" maxlength="15"/>
+                </div>
+                <div>
+                <label for="p2">Player 2 name (O Marker):</label>
+                <input type="text" id="p2" maxlength="15"/>
+                </div>
+                <button class="startBtn" id="startBtn">Start</button>
+            </form>
+        </div> -->
+        <!-- game -->
+        <div class="game o" id="game">
+            <div class="cell x" data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell o" data-cell></div>
+            <div class="cell " data-cell></div>
+            <div class="cell " data-cell></div>
+        </div>
+        <!-- information display -->
+        <div class="info">
+            <div class="players">
+                <div class="play1">
+                    <p>X Marker: </p>
+                    <p class="play1name" id="play1name"></p>                
+                </div>
+                <div class="play2">
+                    <p>O Marker:</p>  
+                    <p class="play2name" id="play2name"></p>              
+                </div>              
+            </div>
+            <div class="status" id="status">
+                <p>status:</p>
+            </div>
+        </div>
+        <!-- end message -->
+        <div class="end-game" id="end-game">
+            <div data-end-game></div>
+            <button class="restartBtn" id="restartBtn"> Restart</button>
+        </div>
+    </div>
+</body>
+</html>
